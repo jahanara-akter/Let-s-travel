@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        li{
+           display: flex;
+           column-gap: 20px;
+           text-align: center;
+           margin: auto;
+           justify-content: space-between;
+        }
+    </style>
 </head>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
 <body>
-    
+    <nav class="max-w-[1170px] mx-auto bg-slate-300">
+        <ul clASS="flex justify-between">
+            <li class="font-bold text-3xl">Home <span id="home" class="bg-slate-100 rounded-lg px-2">0</span></li>
+            <li class="font-bold text-3xl">Settings</li>
+        </ul>
+    </nav>
+    <section class="max-w-[1170px] mx-auto">
+        <div>
+            <div class="hero ">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+                        class="max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <h1 class="text-5xl font-bold">LET'S TRAVEL</h1>
+                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h3 class="font-bold text-2xl">Total Budget: <span id="Total-budget">900</span> $</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-[1170px] mx-auto">
+        <div class="flex justify-between">
+            <div class="">
+                <div class="flex gap-6 shadow-xl bg-white border p-5">
+                    <div class="max-w-[300px]">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+                    </div>
+                    <div class="py-6">
+                        <h4 class="text-2xl font-medium">Shajek</h4>
+                        <h5 class="text-2xl font-medium">Cost <span class="cost">300</span>$</h5>
+                        <button class="btn text-2xl font-medium bg-gray-800 text-white cart">Add to cart</button>
+                    </div>
+                </div>
+                <div class="flex gap-6 shadow-xl bg-white border p-5 my-6">
+                    <div class="max-w-[300px]">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+                    </div>
+                    <div class="py-6">
+                        <h4 class="text-2xl font-medium">DHAKA</h4>
+                        <h5 class="text-2xl font-medium">Cost <span class="cost">300</span>$</h5>
+                        <button class="btn text-2xl font-medium bg-gray-800 text-white cart">Add to cart</button>
+                    </div>
+                </div>
+                <div class="flex gap-6 shadow-xl bg-white border p-5 my-6">
+                    <div class="max-w-[300px]">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+                    </div>
+                    <div class="py-6">
+                        <h4 class="text-2xl font-medium">Cox's Bazar</h4>
+                        <h5 class="text-2xl font-medium">Cost <span class="cost">500</span>$</h5>
+                        <button class="btn text-2xl font-medium bg-gray-800 text-white cart">Add to cart</button>
+                    </div>
+                </div>
+                <div class="flex gap-6 shadow-xl bg-white border p-5">
+                    <div class="max-w-[300px]">
+                        <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+                    </div>
+                    <div class="py-6">
+                        <h4 class="text-2xl font-medium">SREEMONGAl</h4>
+                        <h5 class="text-2xl font-medium">Cost <span class="cost">500</span>$</h5>
+                        <button class="btn text-2xl font-medium bg-gray-800 text-white cart">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center border p-6 shadow-sm">
+                <div>
+                    <h3 class="text-3xl font-medium border-b-4 border-b-black">Cart</h3>
+                    <ul id="slected-place-container" class="m-auto">
+                    </ul>
+                    <h4 class="text-2xl font-medium">Total cost <span id="total-cost">0</span> s</h4>
+                    <div class="flex gap-3 border-b-4 border-b-black pb-2">
+                        <button class="btn text-2xl font-medium bg-gray-800 text-white">Bus +<span>100</span></button>
+                        <button class="btn text-2xl font-medium bg-gray-800 text-white">Train -<span>200</span></button>
+                        <button class="btn text-2xl font-medium bg-gray-800 text-white">Plan +<span>500</span></button>
+                    </div>
+                    <h5 class="text-2xl font-medium">Grand Total <span class="grand-total">0</span> s</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
